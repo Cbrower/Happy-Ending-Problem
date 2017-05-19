@@ -111,7 +111,6 @@ def isConvex(pts):
 def findConvex(pts, n):
 	for points in itertools.permutations(pts, n):
 		if(isConvex(points) and not isComplex(genLineSegs(points))):
-			print("Found Shape")
 			return True, points
 	return False, pts
 
