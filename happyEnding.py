@@ -2,12 +2,17 @@ import matplotlib.pyplot as plt
 import random
 import argparse
 import itertools
+import sys
 
 def main():
 	p = argparse.ArgumentParser()
 	p.add_argument("numsides", type=int)
 	p.add_argument("numpoints", type=int)
 	args = p.parse_args()
+
+	if args.numsides > args.numpoints:
+		print("The number of sides is greater than the number of points!")
+		sys.exit(1)
 	
 	collinear = True
 	while collinear:
