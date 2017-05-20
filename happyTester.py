@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-from happyEnding import *
+from helper_func import *
 import matplotlib.pyplot as plt
 import random
 import argparse
