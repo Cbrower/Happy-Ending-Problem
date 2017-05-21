@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 from helper_func import *
-import matplotlib.pyplot as plt
 import random
 import argparse
 import sys
@@ -28,8 +27,7 @@ def main():
 				collinear = collinearityTest(pts)
 				c += 1
 		flag, poly = findConvex(pts, args.numsides)
-		polyx = []
-		polyy = []
+
 		if flag:
 			counter += 1
 	print("Number of iterations: {}".format(args.numiterations))
